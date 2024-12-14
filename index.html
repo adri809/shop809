@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Shop 809</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.jpeg" alt="The Shop 809">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="info.html">Información</a></li>
+                <li><a href="index.html">Camisas y sueteres</a></li>
+                <li><a href="cajastematicas.html">Cajas temáticas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="countdown-section">
+            <h2>Próximo diseño</h2>
+            <div id="countdown-timer" class="countdown-timer">
+                <span id="days">7</span>d :
+                <span id="hours">00</span>h :
+                <span id="minutes">00</span>m
+            </div>
+        </section>         
+        <section class="artists">
+            <h2>Nuestros artistas</h2>
+
+            <!-- Carrusel para Duki -->
+            <div class="artist">
+                <h3>Duki</h3>
+                <div class="carousel">
+                    <button class="prev" onclick="changeImage('duki', -1)">&#10094;</button>
+                    <img id="duki" src="duki-shirt1.PNG" alt="Camisa de Duki">
+                    <button class="next" onclick="changeImage('duki', 1)">&#10095;</button>
+                </div>
+                <a class="buy-button" href="https://www.instagram.com/vendemos_camisas_01" target="_blank">Comprar ahora</a>
+            </div>
+
+            <!-- Carrusel para Mora -->
+            <div class="artist">
+                <h3>Mora</h3>
+                <div class="carousel">
+                    <button class="prev" onclick="changeImage('mora', -1)">&#10094;</button>
+                    <img id="mora" src="mora-shirt1.jpg" alt="Camisa de Mora">
+                    <button class="next" onclick="changeImage('mora', 1)">&#10095;</button>
+                </div>
+                <a class="buy-button" href="https://www.instagram.com/vendemos_camisas_01" target="_blank">Comprar ahora</a>
+            </div>
+        </section>
+    </main>
+<!-- Carrusel para Bad Bunny -->
+<div class="artist">
+    <h3>Bad Bunny</h3>
+    <div class="carousel">
+        <button class="prev" onclick="changeImage('badbunny', -1)">&#10094;</button>
+        <img id="badbunny" src="pregunta.png" alt="Camisa de Bad Bunny">
+        <button class="next" onclick="changeImage('badbunny', 1)">&#10095;</button>
+    </div>
+    <a class="buy-button" href="https://www.instagram.com/vendemos_camisas_01" target="_blank">Comprar ahora</a>
+</div>
+
+<!-- Carrusel para Rosalía -->
+<div class="artist">
+    <h3>Rosalía</h3>
+    <div class="carousel">
+        <button class="prev" onclick="changeImage('rosalia', -1)">&#10094;</button>
+        <img id="rosalia" src="pregunta.png" alt="Camisa de Rosalía">
+        <button class="next" onclick="changeImage('rosalia', 1)">&#10095;</button>
+    </div>
+    <a class="buy-button" href="https://www.instagram.com/vendemos_camisas_01" target="_blank">Comprar ahora</a>
+</div>
+
+<!-- Carrusel para Anuel AA -->
+<div class="artist">
+    <h3>Anuel AA</h3>
+    <div class="carousel">
+        <button class="prev" onclick="changeImage('anuel', -1)">&#10094;</button>
+        <img id="anuel" src="pregunta.png" alt="Camisa de Anuel AA">
+        <button class="next" onclick="changeImage('anuel', 1)">&#10095;</button>
+    </div>
+    <a class="buy-button" href="https://www.instagram.com/vendemos_camisas_01" target="_blank">Comprar ahora</a>
+</div>
+
+<!-- Carrusel para J Balvin -->
+<div class="artist">
+    <h3>J Balvin</h3>
+    <div class="carousel">
+        <button class="prev" onclick="changeImage('jbalvin', -1)">&#10094;</button>
+        <img id="jbalvin" src="pregunta.png" alt="Camisa de J Balvin">
+        <button class="next" onclick="changeImage('jbalvin', 1)">&#10095;</button>
+    </div>
+    <a class="buy-button" href="https://www.instagram.com/vendemos_camisas_01" target="_blank">Comprar ahora</a>
+</div>
+
+<!-- Carrusel para Karol G -->
+<div class="artist">
+    <h3>Karol G</h3>
+    <div class="carousel">
+        <button class="prev" onclick="changeImage('karolg', -1)">&#10094;</button>
+        <img id="karolg" src="pregunta.png" alt="Camisa de Karol G">
+        <button class="next" onclick="changeImage('karolg', 1)">&#10095;</button>
+    </div>
+    <a class="buy-button" href="https://www.instagram.com/vendemos_camisas_01" target="_blank">Comprar ahora</a>
+</div>
+
+<!-- Carrusel para Rauw Alejandro -->
+<div class="artist">
+    <h3>Rauw Alejandro</h3>
+    <div class="carousel">
+        <button class="prev" onclick="changeImage('rauw', -1)">&#10094;</button>
+        <img id="rauw" src="pregunta.png" alt="Camisa de Rauw Alejandro">
+        <button class="next" onclick="changeImage('rauw', 1)">&#10095;</button>
+    </div>
+    <a class="buy-button" href="https://www.instagram.com/vendemos_camisas_01" target="_blank">Comprar ahora</a>
+</div>
+
+<!-- Carrusel para Daddy Yankee -->
+<div class="artist">
+    <h3>Daddy Yankee</h3>
+    <div class="carousel">
+        <button class="prev" onclick="changeImage('daddyyankee', -1)">&#10094;</button>
+        <img id="daddyyankee" src="pregunta.png" alt="Camisa de Daddy Yankee">
+        <button class="next" onclick="changeImage('daddyyankee', 1)">&#10095;</button>
+    </div>
+    <a class="buy-button" href="https://www.instagram.com/vendemos_camisas_01" target="_blank">Comprar ahora</a>
+</div>
+
+<!-- Carrusel para Becky G -->
+<div class="artist">
+    <h3>Becky G</h3>
+    <div class="carousel">
+        <button class="prev" onclick="changeImage('beckyg', -1)">&#10094;</button>
+        <img id="beckyg" src="pregunta.png" alt="Camisa de Becky G">
+        <button class="next" onclick="changeImage('beckyg', 1)">&#10095;</button>
+    </div>
+    <a class="buy-button" href="https://www.instagram.com/vendemos_camisas_01" target="_blank">Comprar ahora</a>
+</div>
+<!-- Carrusel para Nicky Jam -->
+<div class="artist">
+    <h3>Nicky Jam</h3>
+    <div class="carousel">
+        <button class="prev" onclick="changeImage('nickyjam', -1)">&#10094;</button>
+        <img id="nickyjam" src="pregunta.png" alt="Camisa de Nicky Jam">
+        <button class="next" onclick="changeImage('nickyjam', 1)">&#10095;</button>
+    </div>
+    <a class="buy-button" href="https://www.instagram.com/vendemos_camisas_01" target="_blank">Comprar ahora</a>
+</div>
+
+<!-- Carrusel para Maluma -->
+<div class="artist">
+    <h3>Maluma</h3>
+    <div class="carousel">
+        <button class="prev" onclick="changeImage('maluma', -1)">&#10094;</button>
+        <img id="maluma" src="pregunta.png" alt="Camisa de Maluma">
+        <button class="next" onclick="changeImage('maluma', 1)">&#10095;</button>
+    </div>
+    <a class="buy-button" href="https://www.instagram.com/vendemos_camisas_01" target="_blank">Comprar ahora</a>
+</div>
+
+<!-- Carrusel para Shakira -->
+<div class="artist">
+    <h3>Shakira</h3>
+    <div class="carousel">
+        <button class="prev" onclick="changeImage('shakira', -1)">&#10094;</button>
+        <img id="shakira" src="pregunta.png" alt="Camisa de Shakira">
+        <button class="next" onclick="changeImage('shakira', 1)">&#10095;</button>
+    </div>
+    <a class="buy-button" href="https://www.instagram.com/vendemos_camisas_01" target="_blank">Comprar ahora</a>
+</div>
+
+<!-- Carrusel para Ozuna -->
+<div class="artist">
+    <h3>Ozuna</h3>
+    <div class="carousel">
+        <button class="prev" onclick="changeImage('ozuna', -1)">&#10094;</button>
+        <img id="ozuna" src="pregunta.png" alt="Camisa de Ozuna">
+        <button class="next" onclick="changeImage('ozuna', 1)">&#10095;</button>
+    </div>
+    <a class="buy-button" href="https://www.instagram.com/vendemos_camisas_01" target="_blank">Comprar ahora</a>
+</div>
+
+<!-- Carrusel para Sebastián Yatra -->
+<div class="artist">
+    <h3>Sebastián Yatra</h3>
+    <div class="carousel">
+        <button class="prev" onclick="changeImage('sebastianyatra', -1)">&#10094;</button>
+        <img id="sebastianyatra" src="pregunta.png" alt="Camisa de Sebastián Yatra">
+        <button class="next" onclick="changeImage('sebastianyatra', 1)">&#10095;</button>
+    </div>
+    <a class="buy-button" href="https://www.instagram.com/vendemos_camisas_01" target="_blank">Comprar ahora</a>
+</div>
+
+<!-- Carrusel para Farruko -->
+<div class="artist">
+    <h3>Farruko</h3>
+    <div class="carousel">
+        <button class="prev" onclick="changeImage('farruko', -1)">&#10094;</button>
+        <img id="farruko" src="pregunta.png" alt="Camisa de Farruko">
+        <button class="next" onclick="changeImage('farruko', 1)">&#10095;</button>
+    </div>
+    <a class="buy-button" href="https://www.instagram.com/vendemos_camisas_01" target="_blank">Comprar ahora</a>
+</div>
+
+<!-- Carrusel para Camilo -->
+<div class="artist">
+    <h3>Camilo</h3>
+    <div class="carousel">
+        <button class="prev" onclick="changeImage('camilo', -1)">&#10094;</button>
+        <img id="camilo" src="pregunta.png" alt="Camisa de Camilo">
+        <button class="next" onclick="changeImage('camilo', 1)">&#10095;</button>
+    </div>
+    <a class="buy-button" href="https://www.instagram.com/vendemos_camisas_01" target="_blank">Comprar ahora</a>
+</div>
+
+<!-- Carrusel para Zion & Lennox -->
+<div class="artist">
+    <h3>Zion & Lennox</h3>
+    <div class="carousel">
+        <button class="prev" onclick="changeImage('zionylennox', -1)">&#10094;</button>
+        <img id="zionylennox" src="pregunta.png" alt="Camisa de Zion & Lennox">
+        <button class="next" onclick="changeImage('zionylennox', 1)">&#10095;</button>
+    </div>
+    <a class="buy-button" href="https://www.instagram.com/vendemos_camisas_01" target="_blank">Comprar ahora</a>
+</div>
+
+<!-- Carrusel para Arcángel -->
+<div class="artist">
+    <h3>Arcángel</h3>
+    <div class="carousel">
+        <button class="prev" onclick="changeImage('arcangel', -1)">&#10094;</button>
+        <img id="arcangel" src="pregunta.png" alt="Camisa de Arcángel">
+        <button class="next" onclick="changeImage('arcangel', 1)">&#10095;</button>
+    </div>
+    <a class="buy-button" href="https://www.instagram.com/vendemos_camisas_01" target="_blank">Comprar ahora</a>
+</div>
+    <footer>
+        <p>Síguenos en Instagram, Facebook y TikTok</p>
+        <p>Contacto: WhatsApp + Email</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
