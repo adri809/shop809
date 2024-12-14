@@ -1,3 +1,27 @@
+/* Estilo general */
+.responsive-logo {
+    display: block;
+    max-width: 100%;
+    height: auto; /* Mantiene la proporción */
+    margin: 0 auto; /* Centra la imagen */
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+    .responsive-logo {
+        width: 100vw; /* Ocupa todo el ancho de la pantalla */
+        height: auto; /* Ajuste proporcional */
+    }
+}
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 769px) {
+    .responsive-logo {
+        width: 50vw; /* Tamaño relativo en pantallas grandes */
+        height: auto; /* Mantiene la proporción */
+    }
+}
+
 body {
     font-family: Arial, sans-serif;
     background: linear-gradient(to bottom, #2c003e, #000000);
