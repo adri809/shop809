@@ -10,10 +10,10 @@ body {
 header {
     padding: 20px;
     text-align: center;
-    background-image: url('OIP.jpeg'); /* Aquí puedes cambiar el nombre del archivo */
-    background-size: cover; /* Ajusta la imagen para que cubra todo el área del header */
+    background-image: url('OIP.jpeg'); /* Cambia el archivo según tu imagen */
+    background-size: cover; /* La imagen cubre todo el área */
     background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-repeat: no-repeat; /* Evita la repetición */
 }
 
 nav ul {
@@ -22,6 +22,7 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 15px;
+    flex-wrap: wrap; /* Asegura que los elementos se ajusten en líneas nuevas */
 }
 
 nav ul li a {
@@ -32,6 +33,7 @@ nav ul li a {
 
 .artists {
     margin: 20px;
+    padding: 10px;
 }
 
 .artist {
@@ -43,7 +45,7 @@ nav ul li a {
     align-items: center;
     justify-content: center;
     margin: 20px auto;
-    max-width: 400px;
+    max-width: 90%; /* Se ajusta al ancho del dispositivo */
     position: relative;
 }
 
@@ -73,11 +75,11 @@ button.prev:hover, button.next:hover {
 }
 
 button.prev {
-    left: -50px;
+    left: -30px; /* Ajustado para pantallas pequeñas */
 }
 
 button.next {
-    right: -50px;
+    right: -30px; /* Ajustado para pantallas pequeñas */
 }
 
 .buy-button {
@@ -101,6 +103,7 @@ footer {
     padding: 20px;
     margin-top: 50px;
 }
+
 .countdown-section, .sales-counter {
     text-align: center;
     margin: 20px 0;
@@ -121,4 +124,59 @@ footer {
     padding: 10px;
     border-radius: 10px;
     display: inline-block;
+}
+
+/* Consultas de medios */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .carousel {
+        max-width: 100%;
+    }
+
+    button.prev, button.next {
+        left: -20px;
+        right: -20px;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .buy-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .countdown-timer {
+        font-size: 1.5rem;
+    }
+
+    #shirts-sold-counter {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    button.prev, button.next {
+        left: -15px;
+        right: -15px;
+    }
+
+    .countdown-timer {
+        font-size: 1.2rem;
+    }
+
+    #shirts-sold-counter {
+        font-size: 1.5rem;
+    }
 }
